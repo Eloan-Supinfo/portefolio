@@ -625,6 +625,135 @@ header nav ul li a:hover {
   background: linear-gradient(135deg, #7a1aae 0%, #9a3bf2 100%);
 }
 
+/* Styles spécifiques pour l'article Dr. Mundo */
+.champion-showcase {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.champion-image-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(107, 13, 158, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.champion-image-container:hover {
+  transform: scale(1.05);
+}
+
+.champion-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+.champion-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.abilities-list {
+  margin: 20px 0;
+}
+
+.ability-item {
+  background: rgba(107, 13, 158, 0.05);
+  border-left: 4px solid #6b0d9e;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 0 8px 8px 0;
+  transition: background 0.3s ease;
+}
+
+.ability-item:hover {
+  background: rgba(107, 13, 158, 0.1);
+}
+
+.ability-item strong {
+  color: #6b0d9e;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.ability-item p {
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.build-section {
+  background: linear-gradient(135deg, rgba(107, 13, 158, 0.1), rgba(138, 43, 226, 0.05));
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid rgba(107, 13, 158, 0.2);
+}
+
+.build-section p {
+  margin-bottom: 10px;
+}
+
+.build-section strong {
+  color: #6b0d9e;
+}
+
+.article-tips {
+  background: rgba(34, 139, 34, 0.1);
+  border-left: 4px solid #228b22;
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  margin: 25px 0;
+}
+
+.article-tips h4 {
+  color: #228b22;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.article-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.article-tips li {
+  color: #444;
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.article-tips li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #228b22;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.article-text h3 {
+  color: #6b0d9e;
+  font-size: 1.3rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(107, 13, 158, 0.2);
+  padding-bottom: 8px;
+}
+
 /* IDs spécifiques */
 #page-index #projets {
   background-color: transparent !important;
