@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Blog</title>
+    <link rel="stylesheet" href="../styles.css">  
+  </head>
+  <body id="page-blog">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#MonArticle1" >Article 1</a></li>
+          <li><a href="#MonArticle2">Article 2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="blog">
+        <div class="page-header-card">
+            <h1>Mon Blog</h1>
+            <p class="page-subtitle">Mes réflexions sur le gaming et la tech</p>
+            <div class="blog-navigation">
+                <a href="../index.html" class="nav-link">🏠 Accueil</a>
+                <a href="formulaire.html" class="nav-link">📧 Contact</a>
+            </div>
+        </div>
+
+        <div class="articles-grid">
+            <article class="article-card" >
+                <div class="article-header">
+                    <div class="article-category">🏆 E-Sport</div>
+                    <h2>Rox Tigers vs SKT T1 - Le Match Légendaire</h2>
+                    <p class="article-meta">📅 19 septembre 2025 • Par Eloan DELBROEUVE</p>
+                </div>
+                
+                <div class="article-content">
+                    <p class="article-excerpt">
+                        L'un des plus grands matches de l'histoire de League of Legends. Le 22 octobre 2016, 
+                        cinq outsiders affrontaient la légende SKT T1 en demi-finale des Worlds.
+                    </p>
+                    
+                    <div class="video-container">
+                        <video controls class="article-video">
+                            <source src="../MesImages/rox.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                        <div class="video-caption">Rox Tigers vs SKT T1, demi-finale des Worlds 2016</div>
+                    </div>
+                    
+                    <div class="article-text">
+                        <p>Cinq prodiges contre la légende de l'e-sport mondiale, contre FAKER - celui dont le nom suffit à faire plier les plus grandes équipes. Entouré de ses 4 équipiers, c'est mission impossible. SKT T1 ne perd jamais un match, encore moins un de cette importance.</p>
+                        
+                        <p>Et pourtant, ces cinq inconnus de la communauté mondiale ont fait plier ce géant en demi-finales, pour ensuite remporter le trophée et disparaître comme ils sont arrivés.</p>
+                    </div>
+                    
+                    <a href="https://euw.leagueoflegends.com/fr/featured/relive-worlds-2016" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="article-link">
+                        🎥 Revivre les moments forts
+                    </a>
+                </div>
+            </article>
+
+            <article class="article-card" id="MonArticle2">
+                <div class="article-header">
+                    <div class="article-category">🔄 Mise à jour</div>
+                    <h2>Patch 25.18 - Dernières nouveautés</h2>
+                </div>
+                
+                <div class="article-content">
+                    <div class="patch-image">
+                        <img src="../MesImages/patch.avif" alt="Patch 25.18" class="article-image">
+                    </div>
+                    
+                    <p class="article-excerpt">
+                        Découvrez les dernières modifications et améliorations apportées au jeu.
+                    </p>
+                    
+                    <a href="https://www.leagueoflegends.com/fr-fr/news/game-updates/patch-25-18-notes" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="article-link">
+                        📋 Consulter les notes du patch
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+      <footer>
+        <p class="TexteCentree">© 2025 Mon Portfolio</p>
+      </footer>
+  </body>
+</html>

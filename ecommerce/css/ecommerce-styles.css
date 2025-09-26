@@ -1,0 +1,403 @@
+@import url('../styles.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #2c2c2c;
+  background-color: rgb(77, 128, 58);
+  margin-left: 1px;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  margin-left: 0px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.5s ease, text-decoration 0.5s ease;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+  text-decoration: underline wavy;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+h1, h2, h3 {
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.centrertext {
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6b0d9e;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #6b0d9e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: antiquewhite;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #424242;
+}
+
+.btn-secondary:hover {
+  background-color: #2c2c2c;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.category-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card h3 {
+  color: #6b0d9e;
+  margin-bottom: 15px;
+}
+
+.category-card p {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.category-card a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.category-card a:hover {
+  color: #6b0d9e;
+  text-decoration: underline wavy;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.product-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-info {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.product-features {
+  margin: 20px 0;
+}
+
+.product-features ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.buy-box {
+  background-color: rgba(248, 249, 250, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 2px solid #e0e0e0;
+}
+
+.stock-info {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.out-of-stock {
+  color: red;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  border-color: #6b0d9e;
+  outline: none;
+}
+
+.form textarea {
+  resize: none;
+  height: 120px;
+}
+
+a {
+  color: #2c2c2c;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+a:hover {
+  color: #6b0d9e;
+  text-decoration-color: #6b0d9e;
+}
+
+.underline-here {
+  text-decoration: underline wavy;
+  text-decoration-color: green;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  section {
+    padding: 15px;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-card {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  color: white;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #6b0d9e;
+  outline-offset: 2px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+
+#bouton-lien {
+  font-weight: bold;
+  color:antiquewhite
+}

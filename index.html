@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">  <!--Définition de la langue de la page fr,en,...-->
+<head>
+    <meta charset="UTF-8">  <!--Encodage des caractères en UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon Portfolio</title>  <!--Titre de la page-->
+    <link rel="stylesheet" href="styles.css">  <!--Feuille de style CSS utilisée par la page si existante-->
+</head>
+<body id="page-index">
+    <header>
+        <!-- nav est une section d'une page ayant des liens hypertextes vers d'autres pages ou d'autres endroit de cette page -->
+        <nav>
+            <ul> <!-- ul est une liste non ordonnée -->
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="ecommerce/rayon.html">E-Commerce</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="accueil">
+        <div class="welcome-card">
+            <div class="welcome-content">
+                <h1 class="welcome-title">Bienvenue sur mon Portfolio</h1>
+                <p class="welcome-subtitle">Développeur Web Passionné</p>
+                <p class="welcome-description">Je suis spécialisé dans la création d'applications web modernes et de sites internet innovants. Découvrez mon univers technologique et mes réalisations.</p>
+                
+                <div class="quick-links">
+                    <a href="MesAutresPages/MaPersonnalite.html" class="quick-link" title="En savoir plus sur ma personnalité">
+                        <span class="link-icon">👤</span>
+                        <span>Ma personnalité</span>
+                    </a>
+                    <a href="MesAutresPages/MesLoisirs.html" class="quick-link" title="Découvrir mes loisirs">
+                        <span class="link-icon">🎮</span>
+                        <span>Mes loisirs</span>
+                    </a>
+                    <a href="MesAutresPages/MonBlogDArticles.html" class="quick-link" title="Visiter mon blog">
+                        <span class="link-icon">📝</span>
+                        <span>Mon blog</span>
+                    </a>
+                    <a href="ecommerce/rayon.html" class="quick-link" title="Découvrir ma boutique en ligne">
+                        <span class="link-icon">🛒</span>
+                        <span>E-Commerce</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="profile-section">
+                <div class="profile-card">
+                    <img src="MesImages/MaPhoto.jpg" alt="Photo de profil d'Eloan Delbroeuve" class="profile-image">
+                    <div class="profile-info">
+                        <h3>Eloan Delbroeuve</h3>
+                        <p class="profile-status">Étudiant SUPINFO</p>
+                        <p class="contact-info">📱 06 17 22 61 67</p>
+                        <a href="mailto:eloan.delbroeuve@supinfo.com" class="contact-btn">
+                            📧 Me contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <section class="projetred projet" id="projets">
+        <h2>Mes Projets</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Projet 1</h3>
+                <p>Participation et développement de Traject'Air Project</p>
+                <div class="product-price">En cours</div>
+                <a href="https://www.trajectair.com" class="btn" title="site web de Traject'Air">Voir le projet</a>
+            </div>
+            <div class="product-card">
+                <h3>Projet 2</h3>
+                <p>Réalisation d'un site web de portfolio</p>
+                <div class="product-price">Terminé</div>
+                <a href="#" class="btn">Voir les détails</a>
+            </div>
+            <div class="product-card">
+                <h3>Projet 3</h3>
+                <p>Enseignements supérieur à SUPINFO</p>
+                <div class="product-price">2025-2030</div>
+                <a href="https://www.supinfo.com/ecole-informatique-paris/" class="btn" title="site web de supinfo">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+<br/>
+<br/>
+<section id="cv">
+    <div class="cv-card">
+        <div class="cv-header">
+            <h2>Mon Parcours</h2>
+            <p class="cv-subtitle">Formation et cursus académique</p>
+        </div>
+        
+        <div class="cv-content">
+            <div class="cv-table-container">
+                <table class="cv-table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Curriculum Vitae</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cv-label">Scolarité :</td>
+                            <td class="cv-value">SUPINFO</td>
+                            <td class="cv-period">Année</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="cv-label">Cursus</td>
+                            <td class="cv-value">PGE</td>
+                            <td class="cv-period">2025-2027</td>
+                        </tr>
+                        <tr>
+                            <td class="cv-value">Master</td>
+                            <td class="cv-period">2027 - 2030</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="cv-image-container">
+                <div class="diploma-card">
+                    <a href="https://www.education.gouv.fr/reussir-au-lycee/le-baccalaureat-general-10457" target="_blank" rel="noopener noreferrer">
+                        <img src="mesimages/R.jpg" alt="Diplôme académique" class="diploma-image">
+                    </a>
+                    <div class="diploma-caption">Parcours académique</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location">
+    <div class="location-card">
+        <div class="location-header">
+            <h2>📍 Localisation</h2>
+            <p class="location-subtitle">École SUPINFO Paris - Campus principal</p>
+        </div>
+        
+        <div class="location-content">
+            <div class="location-info">
+                <div class="info-item">
+                    <span class="info-icon">🎓</span>
+                    <div class="info-text">
+                        <strong>École SUPINFO</strong>
+                        <p>École des métiers de l'informatique</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div class="info-text">
+                        <strong>Adresse</strong>
+                        <p>Paris, France</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🚇</span>
+                    <div class="info-text">
+                        <strong>Accès</strong>
+                        <p>Transport en commun disponible</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.961902748276!2d2.3071322763394555!3d48.83986537132973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f7c898ed09b%3A0x7a63d4e6d5968e33!2sEcole%20des%20m%C3%A9tiers%20de%20l&#39;informatique%20-%20SUPINFO%20Paris!5e0!3m2!1sfr!2sfr!4v1758208201898!5m2!1sfr!2sfr"
+                    class="location-map"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Carte de localisation de SUPINFO Paris">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+    <footer>
+        <p>&copy; 2025 Mon Portfolio</p>
+        <div class="footer-center">
+            <a href="MesAutresPages/formulaire.html" title="Formulaire de contact" class="contact-footer">
+                📧 Me contacter
+            </a>
+        </div>
+        <a href="#" id="retour-haut">Retour en Haut de Page</a>  <!--le href vers # permet de revenir en haut de page-->
+    </footer>
+
+    <script src="script.js"></script> 
+</html>

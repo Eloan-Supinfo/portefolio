@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles.css">
+    <title>Formulaire</title>
+  </head>
+  <body id="page-formulaire">
+    <section id="contact-page">
+      <div class="page-header-card">
+        <h1>Contactez-moi</h1>
+        <p class="page-subtitle">Une question ? Un projet ? N'hésitez pas à me contacter !</p>
+        <div class="blog-navigation">
+          <a href="../index.html" class="nav-link">🏠 Accueil</a>
+          <a href="../ecommerce/index.html" class="nav-link">🛒 E-Commerce</a>
+        </div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info-card">
+          <h3>📞 Mes coordonnées</h3>
+          <div class="contact-detail">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>eloan.delbroeuve@supinfo.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">📱</span>
+            <div>
+              <strong>Téléphone</strong>
+              <p>06 17 22 61 67</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">🎓</span>
+            <div>
+              <strong>Formation</strong>
+              <p>Étudiant SUPINFO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>✉️ Formulaire de contact</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="3940064d-fa9c-4aab-a247-f56a04645309" />
+
+            <div class="form-group">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="num">Numéro de téléphone</label>
+              <input type="tel" id="num" name="num" />
+            </div>
+
+            <div class="form-group">
+              <label for="texta">Votre message</label>
+              <textarea name="texta" id="texta" rows="5" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label for="check" class="checkbox-label">
+                <input type="checkbox" id="check" name="check" required />
+                <span class="checkmark"></span>
+                J'accepte d'être recontacté concernant ma demande
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>📩 Envoyer le message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+	<script src="../script.js"></script>  
+	<!--ma page utilise un fichier javascript trés court nommé script.js du répertoire parent-->
+  </body>
+</html>

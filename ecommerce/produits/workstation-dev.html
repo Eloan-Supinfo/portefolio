@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workstation Développeur - TechStore</title>
+    <link rel="stylesheet" href="../css/ecommerce-styles.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <ul>
+                <li><a href="../../index.html">Portfolio</a></li>
+                <li><a href="../rayon.html">Accueil</a></li>
+                <li><a href="../categories/developpement.html">Développement</a></li>
+                <li><a href="../support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="product-detail fade-in">
+            <div class="product-images">
+                <img src="../../MesImages/setup.jpg" alt="Workstation Développeur" loading="lazy">
+                <img src="../../MesImages/patch.avif" alt="Configuration multicran" loading="lazy">
+                <img src="../../MesImages/faker.jpg" alt="Environnement de développement" loading="lazy">
+            </div>
+
+            <div class="product-info">
+                <h1>Workstation Développeur</h1>
+                <div class="product-price">1 599€</div>
+                
+                <div class="product-features">
+                    <h3>Description</h3>
+                    <p>Station de travail optimisée pour le développement professionnel. Configuration haute performance pour compilation rapide et multitâche.</p>
+                    
+                    <h3>Configuration</h3>
+                    <ul>
+                        <li>💻 Intel i7-13700K ou AMD Ryzen 7 7700X</li>
+                        <li>🧠 64GB DDR5 RAM</li>
+                        <li>💾 SSD NVMe 2TB + HDD 4TB</li>
+                        <li>🎮 RTX 4060 Ti (pour développement 3D)</li>
+                        <li>🖥️ Double écran 27" 4K inclus</li>
+                        <li>⌨️ Clavier et souris ergonomiques</li>
+                        <li>🔧 Logiciels préinstallés (VSCode, Docker, etc.)</li>
+                    </ul>
+                </div>
+
+                <div class="buy-box">
+                    <div class="stock-info">✅ En stock - Montage inclus</div>
+                    <label for="quantity">Quantité :</label>
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <button class="btn" onclick="ajouterPanier('Workstation Développeur', 1599)">Ajouter au panier - 1 599€</button>
+                    <p><small>Installation complète incluse - Formation gratuite</small></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechStore</p>
+        </div>
+    </footer>
+
+</body>
+</html>

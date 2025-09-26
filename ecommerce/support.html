@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Support - TechStore</title>
+    <meta name="description" content="Support client et formulaire de contact TechStore">
+    <link rel="stylesheet" href="css/ecommerce-styles.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="../index.html">Portfolio</a></li>
+                <li><a href="rayon.html">Accueil</a></li>
+                <li><a href="categories/gaming.html">Gaming</a></li>
+                <li><a href="categories/streaming.html">Streaming</a></li>
+                <li><a href="categories/developpement.html">Développement</a></li>
+                <li><a href="categories/formation.html">Formation</a></li>
+                <li><a href="support.html" aria-current="page">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="fade-in">
+            <h1 class="centrertext">Support Client</h1>
+            <p class="centrertext">Notre équipe est là pour vous aider</p>
+        </section>
+
+        <section class="fade-in">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <h3>📞 Urgence</h3>
+                    <p><strong>06 17 22 61 67</strong></p>
+                    <p>Lundi au Vendredi<br>9h - 18h</p>
+                </div>
+                <div class="category-card">
+                    <h3>✉️ E-mail</h3>
+                    <p><a href="mailto:eloan.delbroeuve@supinfo.com">eloan.delbroeuve@supinfo.com</a></p>
+                    <p>Réponse sous 24h</p>
+                </div>
+                <div class="category-card">
+                    <h3>💬 Chat</h3>
+                    <p>Support en ligne</p>
+                    <p>Disponible 24/7</p>
+                </div>
+                <div class="category-card">
+                    <h3>🛠️ Technique</h3>
+                    <p>Support spécialisé</p>
+                    <p>Installation et configuration</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form fade-in">
+            <h2 class="centrertext">Formulaire de Contact</h2>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" role="form" aria-label="Formulaire de contact">
+                <input type="hidden" name="access_key" value="3940064d-fa9c-4aab-a247-f56a04645309">
+                
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" required aria-required="true">
+
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone">
+
+                <label for="sujet">Sujet de votre demande *</label>
+                <select id="sujet" name="sujet" required aria-required="true">
+                    <option value="">Choisissez un sujet</option>
+                    <option value="commande">Question sur une commande</option>
+                    <option value="produit">Information produit</option>
+                    <option value="technique">Support technique</option>
+                    <option value="retour">Retour/Échange</option>
+                    <option value="formation">Information formation</option>
+                    <option value="autre">Autre demande</option>
+                </select>
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required aria-required="true" placeholder="Décrivez votre demande..."></textarea>
+
+                <label for="newsletter" class="centrertext">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="oui">
+                    Je souhaite recevoir la newsletter TechStore
+                </label>
+
+                <label for="rgpd" class="centrertext">
+                    <input type="checkbox" id="rgpd" name="rgpd" value="accepte" required aria-required="true">
+                    J'accepte d'être recontacté concernant ma demande *
+                </label>
+
+                <button type="submit" class="btn">Envoyer ma demande</button>
+            </form>
+        </section>
+
+        <section id="faq" class="fade-in">
+            <h2 class="centrertext">Questions Fréquentes</h2>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <h3>🚚 Livraison</h3>
+                    <p><strong>Délais de livraison ?</strong></p>
+                    <p>24h à 48h en France métropolitaine</p>
+                </div>
+                <div class="category-card">
+                    <h3>💳 Paiement</h3>
+                    <p><strong>Moyens de paiement ?</strong></p>
+                    <p>CB, PayPal, Virement, Chèque</p>
+                </div>
+                <div class="category-card">
+                    <h3>🔄 Retours</h3>
+                    <p><strong>Politique de retour ?</strong></p>
+                    <p>30 jours pour changer d'avis</p>
+                </div>
+                <div class="category-card">
+                    <h3>🛡️ Garantie</h3>
+                    <p><strong>Garantie produits ?</strong></p>
+                    <p>2 à 3 ans selon constructeur</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-entreprise" class="fade-in">
+            <h2 class="centrertext">Informations Entreprise</h2>
+            <div class="centrertext">
+                <p>
+                    <strong>TechStore - Portfolio E-Commerce</strong><br>
+                    Développé par <strong>Eloan Delbroeuve</strong><br>
+                    Étudiant à <a href="https://www.supinfo.com/ecole-informatique-paris/" style="color: purple; text-decoration: underline wavy;"><b>SUPINFO Paris</b></a><br>
+                    <br>
+                    📱 <strong>06 17 22 61 67</strong><br>
+                    ✉️ <a href="mailto:eloan.delbroeuve@supinfo.com">eloan.delbroeuve@supinfo.com</a><br>
+                    🌐 <a href="../index.html">Retour au portfolio principal <span class="underline-here">ici</span></a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechStore - Support Client</p>
+        </div>
+    </footer>
+
+</body>
+</html>
